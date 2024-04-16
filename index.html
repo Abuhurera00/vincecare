@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vincecare - All beauty products</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <style>
+        /* Setting initial display state of the search box */
+        .search-box {
+            display: none;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            // Hiding the search box on page load
+            $(".search-box").hide();
+
+            $(".search-icon").click(function () {
+                $(".search-box").toggle();
+                $("input[type='text']").focus();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href="#">Vince`</a></div>
+            <div class="search-icon">
+                <i class="ri-search-line"></i>
+              <div class="search-box">
+            <input type="text" class="only-block" placeholder="Search">
+            <input type="button" value="search" class="only-block">
+              </div>
+            </div>
+            <input type="radio" name="slide" id="menu-btn">
+            <input type="radio" name="slide" id="cancel-btn">
+            <ul class="nav-links">
+                <label for="cancel-btn" class="btn cancel-btn"><i class="ri-close-line"></i></label>
+                <li>
+                    <a href="#" class="desktop-item">Skin Care</a>
+                    <input type="checkbox" id="showMega">
+                    <label for="showMega" class="mobile-item">Skin Care</label>
+                    <!-- <span class="first-arrow comp-hide"><i class="ri-arrow-down-s-line"></i></span> -->
+                    <div class="mega-box">
+                        <div class="content">
+                            <div class="row">
+                                <header>Skin Type</header>
+                                <ul class="mega-links">
+                                    <li><a href="#">Normal Skin</a></li>
+                                    <li><a href="#">Dry Skin</a></li>
+                                    <li><a href="#">oily Skin</a></li>
+                                    <li><a href="#">Acne Prone</a></li>
+                                    <li><a href="#">Combination</a></li>
+                                    <li><a href="#">Sensitive Skin</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <header>Skin Issue</header>
+                                <ul class="mega-links">
+                                    <li><a href="#">Acne & Breakouts</a></li>
+                                    <li><a href="#">Dark Circles</a></li>
+                                    <li><a href="#">Pigmentation</a></li>
+                                    <li><a href="#">Open Pores</a></li>
+                                    <li><a href="#">Dark Spots</a></li>
+                                    <li><a href="#">Flaky Skin</a></li>
+                                    <li><a href="#">Wrinkles</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <header>By Ingredients</header>
+                                <ul class="mega-links">
+                                    <li><a href="#">Vitamin C</a></li>
+                                    <li><a href="#">Licorice Extract</a></li>
+                                    <li><a href="#">Arbutin</a></li>
+                                    <li><a href="#">Shea butter</a></li>
+                                    <li><a href="#">Hyaluronic Acid</a></li>
+                                    <li><a href="#">Co-enzyme (Q10)</a></li>
+                                    <li><a href="#">Retinol</a></li>
+                                    <li><a href="#">Niacinamide</a></li>
+                                    <li><a href="#">Titanium Dioxide</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <header>Products</header>
+                                <ul class="mega-links">
+                                    <li><a href="#">Cleansers</a></li>
+                                    <li><a href="#">Scrubs & Masks</a></li>
+                                    <li><a href="#">Mists & Toners</a></li>
+                                    <li><a href="#">Serums</a></li>
+                                    <li><a href="#">Hand & Foot Care</a></li>
+                                    <li><a href="#">Moisturizers</a></li>
+                                    <li><a href="#">Face Washes</a></li>
+                                    <li><a href="#">Sun Care</a></li>
+                                    <li><a href="#"> Shower Gels</a></li>
+                                    <li><a href="#">Vitamin C Bundle</a></li>
+                                    <li><a href="#"> Beauty Creams</a></li>
+                                </ul>
+                            </div>
+                            <div class="row zoom-container">
+                                <img class="zoom-in"
+                                    src="https://vincecare.com/cdn/shop/products/Perfect30_sCream_compact.jpg?v=1686308075"
+                                    alt="">
+                                <img class="zoom-in"
+                                    src="https://vincecare.com/cdn/shop/products/Perfect30cream_compact.jpg?v=1686308073"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="desktop-item">Hair Care</a>
+                    <input type="checkbox" id="showHair">
+                    <label for="showHair" class="mobile-item">Hair Care</label>
+                    <div class="mega-box">
+                        <div class="content">
+                            <div class="row">
+                                <header>PRODUCTS</header>
+                                <ul class="mega-links">
+                                    <li><a href="#">Shampoo</a></li>
+                                    <li><a href="#">Hair Mask</a></li>
+                                    <li><a href="#">Serum</a></li>
+                                    <li><a href="#">Cream</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <header>HAIR PROBLEM</header>
+                                <ul class="mega-links">
+                                    <li><a href="#">Dry & Damage</a></li>
+                                    <li><a href="#"> Hair Fall / Baldness</a></li>
+                                    <li><a href="#">Split Ends</a></li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <header>By Ingredients</header>
+                                <ul class="mega-links">
+                                    <li><a href="#">Biotin + Keratin</a></li>
+                                    <li><a href="#">Keratin</a></li>
+                                    <li><a href="#"> Argan Oil + Keratin</a></li>
+                                </ul>
+                            </div>
+                            <div class="row zoom-container">
+                                <img class="zoom-in"
+                                    src="https://vincecare.com/cdn/shop/files/Vince-Hair-Care-New-Arrival_210x.jpg?v=1643611766"
+                                    alt="">
+                                <img class="zoom-in"
+                                    src="https://vincecare.com/cdn/shop/files/Vince-Hair-Care-New-Arrival2_1_210x.jpg?v=1643612963"
+                                    alt="">
+                            </div>
+                            <div class="row zoom-container">
+                                <img class="zoom-in"
+                                    src="https://vincecare.com/cdn/shop/files/Vince-Hair-Care-New-Arrival3_455x.jpg?v=1643614138"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="desktop-item">Men Range</a>
+                    <input type="checkbox" id="showDrop">
+                    <label for="showDrop" class="mobile-item">Men Range</label>
+                    <!-- <span class="third-arrow comp-hide"><i class="ri-arrow-down-s-line"></i></span> -->
+                    <ul class="drop-menu">
+                        <li><a href="#">Shempoo</a></li>
+                        <li><a href="#">Beard Cream</a></li>
+                        <li><a href="#">Face Washes</a></li>
+                        <li><a href="#">Face Cream</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">All Products</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><a href="#">Best Sellers</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Reviews</a></li>
+            </ul>
+            <div class="cart-icon">
+                <i class="ri-shopping-cart-line"></i>
+                <span class="badge">0</span>
+            </div>
+            <label for="menu-btn" class="btn menu-btn"><i class="ri-menu-3-line"></i></label>
+        </div>
+        <!-- menu-bar -->
+    </nav>
+
+
+    <main>
+        <div class="slider">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="myslider swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <div class="image object-cover">
+                                        <img src="https://vincecare.com/cdn/shop/files/08.png?v=1693985926" alt=""
+                                            class="background">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <div class="image object-cover">
+                                        <img src="https://vincecare.com/cdn/shop/files/Vince-Web-Banner.png?v=1681556091"
+                                            alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <div class="image object-cover">
+                                        <img src="https://vincecare.com/cdn/shop/files/web-banner.jpg?v=1668423926"
+                                            alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- slider -->
+
+        <div class="top-categories">
+            <h2 class="title">Top Categories</h2>
+        </div>
+        <!-- Heading -->
+
+        <div class="main-container">
+            <div class="img-handler">
+                <div class="flexitem">
+                    <div class="cards">
+                        <img src="https://cdn.shopify.com/s/files/1/0270/2612/8939/files/whitening-body-milk.png?v=1661327083"
+                            alt="">
+                        <h2>Moisturizers</h2>
+                    </div>
+                    <div class="cards">
+                        <img src="https://cdn.shopify.com/s/files/1/0270/2612/8939/files/whitening-face-wash.png?v=1661326432"
+                            alt="">
+                        <h2>Face Washes</h2>
+                    </div>
+                    <div class="cards">
+                        <img src="https://cdn.shopify.com/s/files/1/0270/2612/8939/files/skin-lightening-night-cream.png?v=1661326855"
+                            alt="">
+                        <h2>Creams</h2>
+                    </div>
+                    <div class="cards">
+                        <img src="https://cdn.shopify.com/s/files/1/0270/2612/8939/files/hand-and-foot-lotin.png?v=1661494090"
+                            alt="">
+                        <h2>Hand & Foot Care</h2>
+                    </div>
+                    <div class="cards">
+                        <img src="https://cdn.shopify.com/s/files/1/0270/2612/8939/files/sunblock-40.png?v=1661327356"
+                            alt="">
+                        <h2>Cleansers</h2>
+                    </div>
+                    <div class="cards">
+                        <img src="https://cdn.shopify.com/s/files/1/0270/2612/8939/files/168-168--shower-gel.png?v=1683871022"
+                            alt="">
+                        <h2>Lotions</h2>
+                    </div>
+                    <div class="cards">
+                        <img src="https://cdn.shopify.com/s/files/1/0270/2612/8939/files/hand-and-foot-lotin.png?v=1661494090"
+                            alt="">
+                        <h2>Sun Care</h2>
+                    </div>
+                    <div class="cards">
+                        <img src="https://cdn.shopify.com/s/files/1/0270/2612/8939/files/hand-and-foot-lotin.png?v=1661494090"
+                            alt="">
+                        <h2>Serums</h2>
+                    </div>
+                    <div class="cards">
+                        <img src="https://cdn.shopify.com/s/files/1/0270/2612/8939/files/whitening-body-milk.png?v=1661327083"
+                            alt="">
+                        <h2>Serums</h2>
+                    </div>
+                    <div class="cards">
+                        <img src="https://cdn.shopify.com/s/files/1/0270/2612/8939/files/whitening-face-wash.png?v=1661326432"
+                            alt="">
+                        <h2>Serums</h2>
+                    </div>
+                    <div class="cards">
+                        <img src="https://cdn.shopify.com/s/files/1/0270/2612/8939/files/hand-and-foot-lotin.png?v=1661494090"
+                            alt="">
+                        <h2>Cleansers</h2>
+                    </div>
+                    <div class="cards">
+                        <img src="https://cdn.shopify.com/s/files/1/0270/2612/8939/files/whitening-face-wash.png?v=1661326432"
+                            alt="">
+                        <h2>Serums</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="slider">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="myslider swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <div class="image object-cover">
+                                        <img src="https://vincecare.com/cdn/shop/files/hand-and-foot-bg.jpg?v=1646463699"
+                                            alt="" class="background">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <div class="image object-cover">
+                                        <img src="https://vincecare.com/cdn/shop/files/Vince-Web-Banner.png?v=1681556091"
+                                            alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="top-categories">
+            <h2 class="title">Best Sellers</h2>
+        </div>
+
+
+
+
+
+
+        <section class="multi-container">
+            <div class="card__container swiper">
+                <div class="card__content">
+                    <div class="swiper-wrapper">
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="https://vincecare.com/cdn/shop/products/vitamin-c-serumVinceCare_360x.webp?v=1686308312"
+                                    alt="image" class="card__img">
+                                <div class="card__shadow"></div>
+                            </div>
+
+                            <div class="card__data">
+                                <h3 class="card__name">Vitamin C Serum</h3>
+                                <p class="card__description stars">
+                                </p>
+                                <h2 class="bio">Rs.3280.00</h2>
+
+                                <a href="#" class="card__button">Add To Cart</a>
+                            </div>
+                        </article>
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="https://vincecare.com/cdn/shop/products/RoSeKit_360x.png?v=1686308690"
+                                    alt="image" class="card__img">
+                                <div class="card__shadow"></div>
+                            </div>
+
+                            <div class="card__data">
+                                <h3 class="card__name">Extra Glow Ligtening Cream</h3>
+                                <p class="card__description stars">
+                                </p>
+                                <h2 class="bio">Rs.3280.00</h2>
+
+                                <a href="#" class="card__button">Add To Cart</a>
+                            </div>
+                        </article>
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="https://vincecare.com/cdn/shop/files/VitaminCCream_VitaminCFace_360x.png?v=1686308796"
+                                    alt="image" class="card__img">
+                                <div class="card__shadow"></div>
+                            </div>
+
+                            <div class="card__data">
+                                <h3 class="card__name">Re-gain Leave In Hair</h3>
+                                <p class="card__description stars">
+                                </p>
+                                <h2 class="bio">Rs.3280.00</h2>
+
+                                <a href="#" class="card__button">Add To Cart</a>
+                            </div>
+                        </article>
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="https://vincecare.com/cdn/shop/files/Untitled-1-02_360x.png?v=1687759913"
+                                    alt="image" class="card__img">
+                                <div class="card__shadow"></div>
+                            </div>
+
+                            <div class="card__data">
+                                <h3 class="card__name">Clean & Bright Miracle Kit</h3>
+                                <p class="card__description stars">
+                                </p>
+                                <h2 class="bio">Rs.3280.00</h2>
+
+                                <a href="#" class="card__button">Add To Cart</a>
+                            </div>
+                        </article>
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="https://vincecare.com/cdn/shop/files/VitaminCBundle_360x.png?v=1686308792"
+                                    alt="image" class="card__img">
+                                <div class="card__shadow"></div>
+                            </div>
+
+                            <div class="card__data">
+                                <h3 class="card__name">Natural Whitening Kit</h3>
+                                <p class="card__description stars">
+                                </p>
+                                <h2 class="bio">Rs.3280.00</h2>
+                                <a href="#" class="card__button">Add To Cart</a>
+                            </div>
+                        </article>
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="https://vincecare.com/cdn/shop/products/lightening-toner_360x.png?v=1686308009"
+                                    alt="image" class="card__img">
+                                <div class="card__shadow"></div>
+                            </div>
+
+                            <div class="card__data">
+                                <h3 class="card__name">Natural Whitening Kit</h3>
+                                <p class="card__description stars">
+                                </p>
+                                <h2 class="bio">Rs.3280.00</h2>
+                                <a href="#" class="card__button">Add To Cart</a>
+                            </div>
+                        </article>
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="https://vincecare.com/cdn/shop/products/matte-and-glow-mist-web_360x.png?v=1686308680"
+                                    alt="image" class="card__img">
+                                <div class="card__shadow"></div>
+                            </div>
+
+                            <div class="card__data">
+                                <h3 class="card__name">Natural Whitening Kit</h3>
+                                <p class="card__description stars">
+                                </p>
+                                <h2 class="bio">Rs.3280.00</h2>
+                                <a href="#" class="card__button">Add To Cart</a>
+                            </div>
+                        </article>
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="https://vincecare.com/cdn/shop/files/image_2023_11_04T07_05_04_451Z_360x.png?v=1699099133"
+                                    alt="image" class="card__img">
+                                <div class="card__shadow"></div>
+                            </div>
+
+                            <div class="card__data">
+                                <h3 class="card__name">Natural Whitening Kit</h3>
+                                <p class="card__description stars">
+                                </p>
+                                <h2 class="bio">Rs.3280.00</h2>
+                                <a href="#" class="card__button">Add To Cart</a>
+                            </div>
+                        </article>
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="https://vincecare.com/cdn/shop/products/vitamin-c-serumVinceCare_360x.webp?v=1686308312"
+                                    alt="image" class="card__img">
+                                <div class="card__shadow"></div>
+                            </div>
+
+                            <div class="card__data">
+                                <h3 class="card__name">Natural Whitening Kit</h3>
+                                <p class="card__description stars">
+                                </p>
+                                <h2 class="bio">Rs.3280.00</h2>
+                                <a href="#" class="card__button">Add To Cart</a>
+                            </div>
+                        </article>
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="https://vincecare.com/cdn/shop/files/image_2023_11_04T07_05_04_451Z_360x.png?v=1699099133"
+                                    alt="image" class="card__img">
+                                <div class="card__shadow"></div>
+                            </div>
+
+                            <div class="card__data">
+                                <h3 class="card__name">Natural Whitening Kit</h3>
+                                <p class="card__description stars">
+                                </p>
+                                <h2 class="bio">Rs.3280.00</h2>
+                                <a href="#" class="card__button">Add To Cart</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Navigation buttons -->
+                <div class="swiper-button-next">
+                    <!-- <i class="ri-arrow-right-s-line"></i> -->
+                </div>
+
+                <div class="swiper-button-prev">
+                    <!-- <i class="ri-arrow-left-s-line"></i> -->
+                </div>
+
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!--=============== SWIPER JS ===============-->
+
+
+        <div class="top-categories">
+            <h2 class="title">Newly Launched</h2>
+        </div>
+
+
+        <div class="two-images">
+            <div class="diagonally">
+                <div class="f-image">
+                    <img class="img1"
+                        src="https://cdn.shopify.com/s/files/1/0270/2612/8939/files/bb-cream-3.jpg?v=1698416878" alt="">
+                    <h2>BB Cream</h2>
+                </div>
+                <div class="s-image">
+                    <h2>Eye Roller</h2>
+                    <img class="img2"
+                        src="https://cdn.shopify.com/s/files/1/0270/2612/8939/files/no-tag.png?v=1698516558" alt="">
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="image-container">
+            <div class="s-container">
+                <div class="img-wrapper0">
+                    <img src="https://vincecare.com/cdn/shop/files/botom-banner_1024x1024_crop_center.jpg?v=1662722957"
+                        alt="">
+                </div>
+                <div class="img-wrapper1">
+                    <img src="https://vincecare.com/cdn/shop/files/botom-banner_1024x1024_crop_center.jpg?v=1662722957"
+                        alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="top-categories">
+            <h2 class="title">New Arrivals</h2>
+        </div>
+
+
+
+        <div class="tab-container">
+            <div class="tab-wrapper">
+                <div class="tab" onclick="openTab('tab1')">Shower Gel</div>
+                <div class="tab" onclick="openTab('tab2')">Toner</div>
+                <div class="tab" onclick="openTab('tab3')">Body Lotion</div>
+                <div class="tab" onclick="openTab('tab4')">Cream</div>
+            </div>
+            <div id="tab1" class="tab-content">
+                <div class="content-box active">
+                    <div class="content">
+                        <div class="img0">
+                            <img src="https://vincecare.com/cdn/shop/products/RoSeKit_360x.png?v=1686308690" alt="">
+                        </div>
+                        <div class="total-det">
+                            <a href="#" class="f-button">Add To Cart</a>
+                            <h3 class="tb-head">Natural Whitening Kit</h3>
+                            <p class="tb-des stars">
+                            </p>
+                            <h2 class="tb-price">Rs.3280.00</h2>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="img0">
+                            <img src="https://vincecare.com/cdn/shop/files/VitaminCCream_VitaminCFace_360x.png?v=1686308796"
+                                alt="">
+                        </div>
+                        <div class="total-det">
+                            <a href="#" class="f-button">Add To Cart</a>
+                            <h3 class="tb-head">Natural Whitening Kit</h3>
+                            <p class="tb-des stars">
+                            </p>
+                            <h2 class="tb-price">Rs.3280.00</h2>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="img0">
+                            <img src="https://vincecare.com/cdn/shop/files/Untitled-1-02_360x.png?v=1687759913" alt="">
+                        </div>
+                        <div class="total-det">
+                            <a href="#" class="f-button">Add To Cart</a>
+                            <h3 class="tb-head">Natural Whitening Kit</h3>
+                            <p class="tb-des stars">
+                            </p>
+                            <h2 class="tb-price">Rs.3280.00</h2>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="img0">
+                            <img src="https://vincecare.com/cdn/shop/products/vitamin-c-serumVinceCare_360x.webp?v=1686308312"
+                                alt="">
+                        </div>
+                        <div class="total-det">
+                            <a href="#" class="f-button">Add To Cart</a>
+                            <h3 class="tb-head">Natural Whitening Kit</h3>
+                            <p class="tb-des stars">
+                            </p>
+                            <h2 class="tb-price">Rs.3280.00</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tab2" class="tab-content">
+                <div class="content-box">
+                    <div class="content">
+                        <div class="img0">
+                            <img src="https://vincecare.com/cdn/shop/products/vitamin-c-serumVinceCare_360x.webp?v=1686308312"
+                                alt="">
+                        </div>
+                        <div class="total-det">
+                            <a href="#" class="f-button">Add To Cart</a>
+                            <h3 class="tb-head">Natural Whitening Kit</h3>
+                            <p class="tb-des stars">
+                            </p>
+                            <h2 class="tb-price">Rs.3280.00</h2>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="img0">
+                            <img src="https://vincecare.com/cdn/shop/files/VitaminCBundle_360x.png?v=1686308792" alt="">
+                        </div>
+                        <div class="total-det">
+                            <a href="#" class="f-button">Add To Cart</a>
+                            <h3 class="tb-head">Natural Whitening Kit</h3>
+                            <p class="tb-des stars">
+                            </p>
+                            <h2 class="tb-price">Rs.3280.00</h2>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="img0">
+                            <img src="https://vincecare.com/cdn/shop/files/image_2023_11_04T07_05_04_451Z_360x.png?v=1699099133"
+                                alt="">
+                        </div>
+                        <div class="total-det">
+                            <a href="#" class="f-button">Add To Cart</a>
+                            <h3 class="tb-head">Natural Whitening Kit</h3>
+                            <p class="tb-des stars">
+                            </p>
+                            <h2 class="tb-price">Rs.3280.00</h2>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="img0">
+                            <img src="https://vincecare.com/cdn/shop/files/VitaminCCream_VitaminCFace_360x.png?v=1686308796"
+                                alt="">
+                        </div>
+                        <div class="total-det">
+                            <a href="#" class="f-button">Add To Cart</a>
+                            <h3 class="tb-head">Natural Whitening Kit</h3>
+                            <p class="tb-des stars">
+                            </p>
+                            <h2 class="tb-price">Rs.3280.00</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tab3" class="tab-content">
+                <div class="content-box">
+                    <div class="content">
+                        <div class="img0">
+                            <img src="https://vincecare.com/cdn/shop/files/image_2023_11_04T07_05_04_451Z_360x.png?v=1699099133"
+                                alt="">
+                        </div>
+                        <div class="total-det">
+                            <a href="#" class="f-button">Add To Cart</a>
+                            <h3 class="tb-head">Natural Whitening Kit</h3>
+                            <p class="tb-des stars">
+                            </p>
+                            <h2 class="tb-price">Rs.3280.00</h2>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="img0">
+                            <img src="https://vincecare.com/cdn/shop/products/menshowergel.14_360x.png?v=1686308746"
+                                alt="">
+                        </div>
+                        <div class="total-det">
+                            <a href="#" class="f-button">Add To Cart</a>
+                            <h3 class="tb-head">Natural Whitening Kit</h3>
+                            <p class="tb-des stars">
+                            </p>
+                            <h2 class="tb-price">Rs.3280.00</h2>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="img0">
+                            <img src="https://vincecare.com/cdn/shop/products/moisturizingshowergel.15_360x.png?v=1686308759"
+                                alt="">
+                        </div>
+                        <div class="total-det">
+                            <a href="#" class="f-button">Add To Cart</a>
+                            <h3 class="tb-head">Natural Whitening Kit</h3>
+                            <p class="tb-des stars">
+                            </p>
+                            <h2 class="tb-price">Rs.3280.00</h2>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="img0">
+                            <img src="https://vincecare.com/cdn/shop/files/bb900.2_360x.png?v=1697028762" alt="">
+                        </div>
+                        <div class="total-det">
+                            <a href="#" class="f-button">Add To Cart</a>
+                            <h3 class="tb-head">Natural Whitening Kit</h3>
+                            <p class="tb-des stars">
+                            </p>
+                            <h2 class="tb-price">Rs.3280.00</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tab4" class="tab-content">
+                <div class="content-box">
+                    <div class="content">
+                        <div class="img0">
+                            <img src="https://vincecare.com/cdn/shop/products/lightening-toner_360x.png?v=1686308009"
+                                alt="">
+                        </div>
+                        <div class="total-det">
+                            <a href="#" class="f-button">Add To Cart</a>
+                            <h3 class="tb-head">Natural Whitening Kit</h3>
+                            <p class="tb-des stars">
+                            </p>
+                            <h2 class="tb-price">Rs.3280.00</h2>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="img0">
+                            <img src="https://vincecare.com/cdn/shop/products/matte-and-glow-mist-web_360x.png?v=1686308680"
+                                alt="">
+                        </div>
+                        <div class="total-det">
+                            <a href="#" class="f-button">Add To Cart</a>
+                            <h3 class="tb-head">Natural Whitening Kit</h3>
+                            <p class="tb-des stars">
+                            </p>
+                            <h2 class="tb-price">Rs.3280.00</h2>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="img0">
+                            <img src="https://vincecare.com/cdn/shop/products/body-milk3_1_360x.png?v=1686308480"
+                                alt="">
+                        </div>
+                        <div class="total-det">
+                            <a href="#" class="f-button">Add To Cart</a>
+                            <h3 class="tb-head">Natural Whitening Kit</h3>
+                            <p class="tb-des stars">
+                            </p>
+                            <h2 class="tb-price">Rs.3280.00</h2>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="img0">
+                            <img src="https://vincecare.com/cdn/shop/products/Skinlighteningnightcream1_360x.jpg?v=1686308015"
+                                alt="">
+                        </div>
+                        <div class="total-det">
+                            <a href="#" class="f-button">Add To Cart</a>
+                            <h3 class="tb-head">Natural Whitening Kit</h3>
+                            <p class="tb-des stars">
+                            </p>
+                            <h2 class="tb-price">Rs.3280.00</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="top-categories">
+            <h2 class="title"><span class="ri-instagram-line"><i class="connect">#VinceCare On Instagram</i></span></h2>
+        </div>
+
+
+        <div class="insta-wrapper">
+            <div class="img-row">
+                <img src="https://vincecare.com/cdn/shop/products/vitamin-c-serumVinceCare_360x.webp?v=1686308312"
+                    alt="Image 1">
+                <span><i class="ri-instagram-line"></i></span>
+                <div class="overlay"></div>
+            </div>
+
+            <div class="img-row">
+                <img src="https://vincecare.com/cdn/shop/files/image_2023_11_04T07_05_04_451Z_360x.png?v=1699099133"
+                    alt="Image 2">
+                <span><i class="ri-instagram-line"></i></span>
+                <div class="overlay"></div>
+            </div>
+            <div class="img-row">
+                <img src="https://vincecare.com/cdn/shop/files/VitaminCBundle_360x.png?v=1686308792" alt="Image 2">
+                <span><i class="ri-instagram-line"></i></span>
+                <div class="overlay"></div>
+            </div>
+            <div class="img-row">
+                <img src="https://vincecare.com/cdn/shop/files/Untitled-1-02_360x.png?v=1687759913" alt="Image 2">
+                <span><i class="ri-instagram-line"></i></span>
+                <div class="overlay"></div>
+            </div>
+            <div class="img-row">
+                <img src="https://vincecare.com/cdn/shop/files/VitaminCCream_VitaminCFace_360x.png?v=1686308796"
+                    alt="Image 2">
+                <span><i class="ri-instagram-line"></i></span>
+                <div class="overlay"></div>
+            </div>
+            <div class="img-row">
+                <img src="https://vincecare.com/cdn/shop/products/RoSeKit_360x.png?v=1686308690" alt="Image 2">
+                <span><i class="ri-instagram-line"></i></span>
+                <div class="overlay"></div>
+            </div>
+        </div>
+        </div>
+
+    </main>
+
+
+
+
+
+    <footer>
+        <div class="flexrow">
+            <div class="col w-img">
+                <img src="https://vincecare.com/cdn/shop/files/LOGO.png?v=1622456163" alt="" class="f-logo">
+                <p>2-C, Value Addition City, FIEDMC, Pakistan</p>
+                <p>Call us at: +92 3 111 222 120.</p>
+                <p class="email-id">Email: info@vincecare.com</p>
+            </div>
+            <div class="col">
+                <h3>Vince Care <div class="underline"><span></span></div></h3>
+                <ul>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Why VINCÉ?</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Reviews</a></li>
+                    <li><a href="">Notifications</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Business <div class="underline"><span></span></div></h3>
+                <ul>
+                    <li><a href="#">Become a distributor</a></li>
+                    <li><a href="#">Find in Stores</a></li>
+                    <li><a href="#">Quality & Safety</a></li>
+                    <li><a href="#">Media Partner</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Help & Terms <div class="underline"><span></span></div></h3>
+                <ul>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Return & Refund</a></li>
+                    <li><a href="#">Review Guidelines</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Newsletter <div class="underline"><span></span></div></h3>
+                <form action="">
+                    <i class="ri-mail-line"></i>
+                    <input type="email" placeholder="Enter Your Emial" required>
+                    <button type="submit"><i class="ri-arrow-right-line"></i></button>
+                </form>
+                <div class="social-icons">
+                    <h3 class="follow">Follow us</h3>
+                    <i class="soc ri-facebook-line"></i>
+                    <i class="soc ri-instagram-line"></i>
+                    <i class="soc ri-youtube-line"></i>
+                    <i class="soc ri-tiktok-line"></i>
+                </div>
+            </div>
+        </div>
+   <hr>
+   <p class="copyright">© 2021 Vincecare. All Rights Reserved.</p>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="script.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
